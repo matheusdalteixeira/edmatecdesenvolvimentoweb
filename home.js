@@ -46,9 +46,9 @@ function preCarregamento(){
 	var s = 1;
 	for(i = 0; i < 3; i++){
 		imgs[i] = new Image();
-		imgs[i].src = "../modelosProntos/projeto"+s+".png";
+		imgs[i].src = "projeto"+s+".png";
 		if(i == 2)
-			imgs[i].src = "../modelosProntos/projeto"+s+".jpg";
+			imgs[i].src = "projeto"+s+".jpg";
 		s++;
 	}
 }
@@ -67,7 +67,6 @@ function carregarTexto(img){
 function inicia(){
 	pagHome.iniciaEstagio();
 	if(estagio == pagHome.executando){
-	//if(primeiroCarregamento == true){
 		logo=document.getElementById("logomarca");
 		novPagDes=document.getElementById("novPagDes");
 		novPagPro=document.getElementById("novPagPro");
@@ -110,24 +109,10 @@ function anima(mudarEstadoAnimacao){
 	vbarra.style.width = vtempo+"%";
 	if(mudarEstadoAnimacao == pagHome.pausado){
 		cancelAnimationFrame(startSlider);
-		// alert(startSlider);
 		return;
 	}
-	// else if(mudarEstadoAnimacao == pagHome.executando)
 	startSlider = window.requestAnimationFrame(anima);
 }
-
-// function cliqueLogo(recebeEvento){
-// 	cancelAnimationFrame(startSlider);
-// 	anima(estagio);
-// 	if(recebeEvento.target.id == "logo"){
-// 		preCarregamento();
-// 		imgAtual = 0;
-// 		maxImg = imgs.length - 1;
-// 		tempoTroca = 0;
-// 		carregarImg(imgAtual);
-// 	}
-// }
 
 function clique(evento){
 	var tagArticle;
@@ -138,11 +123,6 @@ function clique(evento){
 		cancelAnimationFrame(startSlider);
 		if(estagioAntesClique == pagHome.pausado){
 			reativaArticle();
-			// preCarregamento();
-			// imgAtual = 0;
-			// maxImg = imgs.length - 1;
-			// tempoTroca = 0;
-			// carregarImg(imgAtual);
 		}
 		// anima(estagio);
 		inicia();
@@ -195,7 +175,6 @@ function reativaArticle(){
 	tagPai.appendChild(novos_filhos);
 	novos_filhos.setAttribute("id","idComentario");
 	// dvbarra interno a dvload
-	// tagPai = document.getElementById("dvload");
 	novos_filhos = document.createElement("div");
 	tagPai.appendChild(novos_filhos);
 	novos_filhos.setAttribute("id","dvbarra");
@@ -247,7 +226,7 @@ function articleConteudo(pagSelecionada){
 	var i = 0;
 	var animacaoArticle = -300;
 	tagArticle = document.getElementById("tagArticle");
-	tagArticle.style.backgroundImage = "url('img/programacao2.jpeg')";
+	tagArticle.style.backgroundImage = "url('programacao2.jpeg')";
 	//tagArticle.style.padding = "20px";
 	tagArticle.removeChild(slider);
 	if(pagSelecionada == "novPagDes"){
