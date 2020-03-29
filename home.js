@@ -46,9 +46,7 @@ function preCarregamento(){
 	var s = 1;
 	for(i = 0; i < 3; i++){
 		imgs[i] = new Image();
-		imgs[i].src = "projeto"+s+".png";
-		if(i == 2)
-			imgs[i].src = "projeto"+s+".jpg";
+		imgs[i].src = "projeto"+s+".jpg";
 		s++;
 	}
 }
