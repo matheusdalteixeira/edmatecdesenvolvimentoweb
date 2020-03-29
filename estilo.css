@@ -1,0 +1,248 @@
+/*
+* Estilo geral
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body, section, footer{
+	background: white;
+	width: 100%;
+	height: auto;
+	display: block;
+	float: left;
+}
+.coluna{
+	width: calc(50% - 18px);
+	height: auto;
+	margin: 0 9px;
+	padding: 20px;
+	background-color: #eeac9e99;
+	opacity: 99.9999%;
+	border-right: 3px solid gray;
+	border-bottom: 3px solid gray;
+	/*border-radius: 10%;*/
+	display: block;
+	float: left;
+	border-radius: 0 0 20px 0;
+}
+.colunaDes{
+	background: transparent;
+	/*border-left:none;
+	border-top: 2px solid #1f238f80;
+	border-right:none;
+	border-bottom: 2px solid #1f238f80;*/
+	border: none;
+	border-radius: 0;
+}
+/*
+* Estilo aside - página principal
+*/
+section aside{
+	width: calc(100% - 1000px);
+	height: 443px;
+	float: left;
+	background: #eeac9e;
+	text-transform: uppercase;
+}
+section aside header{
+	width: 100%;
+	height: 100%;
+	margin: 20px 0;
+}
+section aside header #logomarca,
+section aside header nav{
+	width: 100%;
+	/*height;
+	* configurar a partir do javascriprt
+	* gerar valor a partir da imagem
+	*/
+	display: block;
+	float: left;
+}
+section aside header #redesSociais{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 30px;
+	height: auto;
+	float: left;
+	display: block;
+}
+section aside header nav{
+	margin-top: 10px; 
+}
+section aside header #logomarca a,
+section aside header nav ul{
+	width: 60%;
+	margin-left: 20%;
+	display: block;
+	float: left;
+}
+section aside header #redesSociais a{
+	width: 30%;
+	height: auto;
+	float: left;
+	display: block;
+}
+#imgMeio{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+section aside header #logomarca a img,
+section aside header nav ul li,
+section aside header #redesSociais a img{
+	display: block;
+	float: left;
+}
+section aside header #logomarca a img{
+	width: 90%;
+	margin-left: 5%;
+	/*margin-top: -30px;*/
+}
+section aside header nav ul li{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	padding: 0;
+}
+section aside header nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+}
+/*section aside header nav ul li a:hover{
+	color: #1f238f;
+	font-weight: 800;
+}*/
+section aside header #redesSociais a img{
+	width: 100%;
+	height: auto;
+}
+/*
+* Estilo article - página principal
+*/
+section article{
+	width: 1000px;
+	height: 443px;
+	display: block;
+	float: left;
+}
+#dvslider{
+	width: 100%;
+	height: 443px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btSlider1{
+	background-image: linear-gradient(to right, #eeac9e70, transparent 100%);
+	width: 30px;
+	height: 30%;
+	color: blue;
+	cursor: pointer;
+	margin: 0px;
+	border: 4px solid #eeac9e50;
+	border-radius: 0 50px 50px 0;
+	font-weight: bolder;
+}
+.btSlider2{
+	background-image: linear-gradient(to left, #eeac9e70, transparent 100%);
+	width: 30px;
+	height: 30%;
+	color: blue;
+	cursor: pointer;
+	margin: 0px;
+	border: 4px solid #eeac9e50;
+	border-radius: 50px 0 0 50px;
+	font-weight: bolder;
+}
+.btSlider1:hover, .btSlider2:hover{
+	border: 2px solid #eeac9e50;
+	outline: none;
+}
+#dvload{
+	width: 50%;
+	height: 50%;
+	margin: 0%;
+	opacity: 100%;
+}
+#idComentario{
+	width: 100%;
+	height: 96%;
+	border-radius: 16px 16px 0 0;
+	background-color: #ccc;
+	opacity: 92%; /*Não suportado no EDGE*/
+}
+#idComentario h1{
+	width: 100%;
+	height: 18%;
+	margin-top: 2%;
+	float: left;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+#idComentario p{
+	float: left;
+	display: block;
+	width: 90%;
+	height: 45%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	text-align: justify;	
+}
+#homeMaisInfo{
+	display: block;
+	float: left;
+	width: 40%;
+	height: 15%;
+	margin-left: 30%;
+	background: #ccc;
+	border: 1px solid #03989e;
+	border-radius: 8%;
+	cursor: pointer;
+	color: #03989e;
+	font-size: 1em;
+	font-weight: 800;
+}
+#homeMaisInfo:hover{
+	color: #ccc;
+	background: #03989e;
+}
+#dvbarra{
+	width: 0%;
+	height: 4%;
+	background: #a8a8a8;
+	border: 1px solid gray;
+	border-radius: 0 0 16px 16px;
+}
+/*
+* Estilo aside - página des
+*/
+/*
+* Estilo aside - página pro
+*/
+/*
+* Estilo aside - página con
+*/
+/*
+* Estilo footer - página principal
+*/
+section footer{
+	background: #eeac9e70;
+}
+section footer p{
+	color: gray;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px 0;
+}
+section footer p a{
+	text-decoration: none;
+	color: gray;
+}
+section footer p a:hover{
+	color: #1f238f;
+}
